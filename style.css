@@ -153,3 +153,32 @@ header .logo {
 	letter-spacing: 2px;
 	padding: 13px;
 }
+
+.desktop {
+	display: block;
+}
+
+.no-desktop {
+	display: none;
+}
+
+@media (max-width: 425px) {
+	.desktop {
+		display: none;
+	}
+
+	.no-desktop {
+		height: 100vh;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #fff;
+		z-index: 10000;
+	}
+
+	.no-desktop h1 {
+		color: #000;
+		font-size: 24px;
+	}
+}
